@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Retail - Page Previews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .preview-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .preview-card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .mockup {
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 300px;
+            position: relative;
+        }
+        .mockup-white {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .mockup-sidebar {
+            background: rgba(255, 255, 255, 0.95);
+            width: 200px;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+        .mockup-content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: calc(100% - 240px);
+            vertical-align: top;
+        }
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .stat-icon {
+            font-size: 32px;
+        }
+        .table-mock {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-mock th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        .table-mock td {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .nav-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ Smart Retail - Frontend Preview</h1>
+        
+        <div class="preview-grid">
+            <!-- Login Page -->
+            <div class="preview-card">
+                <h2>1. Login Page</h2>
+                <div class="mockup">
+                    <div class="mockup-white">
+                        <h3 style="color: #667eea; text-align: center; margin-bottom: 20px;">🛍️ Smart Retail</h3>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" style="background: white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password" style="background: white;">
+                        </div>
+                        <button class="btn" style="width: 100%;">Login</button>
+                        <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">
+                            Don't have an account? <a href="#" style="color: #667eea;">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register Page -->
+            <div class="preview-card">
+                <h2>2. Register Page</h2>
+                <div class="mockup">
+                    <div class="mockup-white">
+                        <h3 style="color: #667eea; text-align: center; margin-bottom: 20px;">🛍️ Smart Retail</h3>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name" style="background: white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" style="background: white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Create a password" style="background: white;">
+                        </div>
+                        <button class="btn" style="width: 100%;">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard -->
+            <div class="preview-card">
+                <h2>3. Dashboard Page</h2>
+                <div class="mockup">
+                    <div class="mockup-sidebar">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">🛍️ Smart Retail</h4>
+                        <div class="nav-item">📊 Dashboard</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">👥 Customers</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">💰 Add Sale</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">📱 Send SMS</div>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 style="color: white; margin-bottom: 20px;">Dashboard</h3>
+                        <div class="stat-box">
+                            <div class="stat-icon">👥</div>
+                            <div>
+                                <div style="font-size: 12px; color: #666;">Total Customers</div>
+                                <div style="font-size: 24px; font-weight: bold;">1,250</div>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon">💰</div>
+                            <div>
+                                <div style="font-size: 12px; color: #666;">Today's Sales</div>
+                                <div style="font-size: 24px; font-weight: bold;">TSh 45,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customers Page -->
+            <div class="preview-card">
+                <h2>4. Customers Page</h2>
+                <div class="mockup">
+                    <div class="mockup-sidebar">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">🛍️ Smart Retail</h4>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">📊 Dashboard</div>
+                        <div class="nav-item">👥 Customers</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">💰 Add Sale</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">📱 Send SMS</div>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 style="color: white; margin-bottom: 15px;">Customers</h3>
+                        <input type="text" placeholder="Search by name or phone..." style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 2px solid white;">
+                        <div class="mockup-white">
+                            <table class="table-mock">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Phone Number</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John Doe</td>
+                                        <td>+255 712 345 678</td>
+                                        <td><span class="badge">1,250</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jane Smith</td>
+                                        <td>+255 713 456 789</td>
+                                        <td><span class="badge">890</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ahmed Hassan</td>
+                                        <td>+255 714 567 890</td>
+                                        <td><span class="badge">2,100</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Sale Page -->
+            <div class="preview-card">
+                <h2>5. Add Sale Page</h2>
+                <div class="mockup">
+                    <div class="mockup-sidebar">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">🛍️ Smart Retail</h4>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">📊 Dashboard</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">👥 Customers</div>
+                        <div class="nav-item">💰 Add Sale</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">📱 Send SMS</div>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 style="color: white; margin-bottom: 20px;">Add Sale</h3>
+                        <div class="mockup-white">
+                            <div class="form-group">
+                                <label>Select Customer</label>
+                                <select style="background: white;">
+                                    <option>Choose a customer...</option>
+                                    <option>John Doe - +255 712 345 678 (Points: 1,250)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Sale Amount (TSh)</label>
+                                <input type="number" placeholder="Enter sale amount" style="background: white;">
+                            </div>
+                            <button class="btn" style="width: 100%;">Record Sale</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Send SMS Page -->
+            <div class="preview-card">
+                <h2>6. Send SMS Page</h2>
+                <div class="mockup">
+                    <div class="mockup-sidebar">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">🛍️ Smart Retail</h4>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">📊 Dashboard</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">👥 Customers</div>
+                        <div style="padding: 10px; margin: 5px 0; color: #666; font-size: 14px;">💰 Add Sale</div>
+                        <div class="nav-item">📱 Send SMS</div>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 style="color: white; margin-bottom: 20px;">Send SMS</h3>
+                        <div class="mockup-white">
+                            <div class="form-group">
+                                <label>Select Group</label>
+                                <select style="background: white;">
+                                    <option>Choose a group...</option>
+                                    <option>VIP Customers - Customers with 2000+ points</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Promo Message</label>
+                                <textarea rows="4" placeholder="Enter your promotional message here..." style="background: white; resize: vertical;"></textarea>
+                                <div style="text-align: right; font-size: 12px; color: #666; margin-top: 5px;">0 characters</div>
+                            </div>
+                            <button class="btn" style="width: 100%;">📱 Send SMS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 15px; margin-top: 40px;">
+            <h2 style="color: #667eea; margin-bottom: 20px;">Design Features</h2>
+            <ul style="line-height: 2; color: #666;">
+                <li>✨ Modern gradient background (Purple to Purple)</li>
+                <li>🎨 Clean white cards with blur effects</li>
+                <li>📱 Responsive design for all screen sizes</li>
+                <li>🎯 Smooth animations and transitions</li>
+                <li>💫 Hover effects on interactive elements</li>
+                <li>🔐 Secure authentication flow</li>
+                <li>📊 Beautiful dashboard with statistics</li>
+                <li>🔍 Search functionality on customers page</li>
+                <li>✅ Success/Error message displays</li>
+                <li>🎭 Professional color scheme</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
