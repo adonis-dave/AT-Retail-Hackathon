@@ -1,0 +1,30 @@
+{
+  "name": "at-retail-hackathon",
+  "version": "1.0.0",
+  "description": "AT hackathon project dealing with retail and stock management issues for SMBs",
+  "homepage": "https://github.com/adonis-dave/AT-Retail-Hackathon#readme",
+  "bugs": {
+    "url": "https://github.com/adonis-dave/AT-Retail-Hackathon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonis-dave/AT-Retail-Hackathon.git"
+  },
+  "license": "ISC",
+  "author": "Adonis Dave",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "africastalking": "^0.7.8",
+    "axios": "^1.13.4",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "pg": "^8.18.0"
+  }
+}
